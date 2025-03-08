@@ -141,7 +141,7 @@ col1, col2 = st.columns([1, 2])
 
 with col1:
     # Display the image without caption
-    st.image(r'C:\Users\pc\Downloads\Screenshot__430_-removebg-preview.png', use_column_width=False, width=250)
+    st.image(r'logo.png', use_column_width=False, width=250)
 
 with col2:
     st.markdown(

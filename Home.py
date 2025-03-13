@@ -9,6 +9,12 @@ st.markdown(
         background-color: #bcecac; /* Light Green background */
         color: #212121;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensures footer is pushed to bottom */
+    }
+    .main-content {
+        flex: 1; /* Pushes footer down */
     }
     .top-nav-bar {
         position: fixed;
@@ -46,38 +52,36 @@ st.markdown(
         transform: scale(1.1);
     }
 
-    /* Welcome section with peach background and centered text */
+    /* Welcome section */
     .welcome-section {
-        background: #ffffff; /* Peach background for text box */
+        background: #ffffff;
         border-radius: 20px;
         padding: 25px;
         animation: fadeIn 1.5s;
-        text-align: center; /* Center the text */
+        text-align: center;
     }
 
     /* Center the footer content */
     .footer {
-        background-color: #06402b; /* Black background */
-        color: #ffffff; /* White text */
+        background-color: #06402b;
+        color: #ffffff;
         display: flex;
-        flex-direction: column;  /* Stack items vertically */
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        position: fixed;
-        bottom: 0;
         width: 100%;
-        height: 150px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin-top: auto; /* Pushes footer to bottom */
     }
     .footer a {
-        color: #ffffff; /* White links */
+        color: #ffffff;
         text-decoration: none;
         padding: 0 15px;
         font-size: 20px;
     }
     .footer a:hover {
-        color: #e9ba8c;  /* Peach color for hover effect */
+        color: #e9ba8c;
     }
     .footer .social-icons {
         margin-top: 10px;
@@ -88,7 +92,7 @@ st.markdown(
         transition: color 0.3s ease;
     }
     .footer .social-icons i:hover {
-        color: #e9ba8c;  /* Peach */
+        color: #e9ba8c;
     }
 
     /* Styled image */
@@ -97,8 +101,8 @@ st.markdown(
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         margin-top: 20px;
-        width: 250px;  /* Adjusted width */
-        object-fit: cover; /* Ensures the image fits within the box while maintaining aspect ratio */
+        width: 250px;
+        object-fit: cover;
     }
     
     .styled-image:hover {
@@ -107,12 +111,8 @@ st.markdown(
     }
 
     @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 
     /* Center the widget (button) */
@@ -120,7 +120,7 @@ st.markdown(
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px; /* Adjust as needed */
+        height: 100px;
     }
 
     </style>
@@ -128,19 +128,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.write("""
-<style>
-body {
-    margin-top: 100px;
-}
-</style>
-""", unsafe_allow_html=True)
+# Main Content Container
+st.markdown('<div class="main-content">', unsafe_allow_html=True)
 
-# Center the button (widget) using the new CSS class
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    # Display the image without caption
     st.image('logo.png', width=250)
 
 with col2:
@@ -162,13 +155,13 @@ with col2:
         unsafe_allow_html=True
     )
 
-# Center the button widget
+# Closing Main Content Div
+st.markdown('</div>', unsafe_allow_html=True)
 
-# Center the footer content with black background
+# Footer
 st.markdown(
     """
-  <div class="footer">
-        <p>Connect with us:</p>
+    <div class="footer">
         <div class="social-icons">
             <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>

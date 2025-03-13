@@ -4,11 +4,6 @@ st.set_page_config(page_title="Language Learning Platform", layout="wide")
 st.markdown(
     """
     <style>
-    .stApp {
-        background: linear-gradient(to bottom, #ADD8E6, #ffffff);
-        color: #000000;
-        font-family: Arial, sans-serif;
-    }
     .top-nav-bar {
         position: fixed;
         top: 0;
@@ -48,13 +43,46 @@ st.markdown(
         box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
         animation: fadeIn 1.5s;
     }
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+    a:link, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #e9ba8c;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #06402b; /* Dark Green background */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer .social-icons {
+    margin-top: 8px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.footer .social-icons a:hover {
+    color: #e9ba8c; /* Peach hover effect */
+}
+@keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
     </style>
     """,
@@ -253,3 +281,24 @@ recommended_languages = recommend_languages_for_disorder(disorder, language_conc
 
 st.write(f"Based on your speech defect ({speech_defect}), the following languages are recommended for you:")
 st.write(recommended_languages)
+
+st.markdown(
+    """
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 LanguageMaster, All Rights Reserved</p>
+    </div>
+    """,
+    unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    """,
+    unsafe_allow_html=True
+)

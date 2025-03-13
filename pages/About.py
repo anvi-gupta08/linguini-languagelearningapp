@@ -5,28 +5,6 @@ st.set_page_config(page_title="Language Learning Platform", layout="wide")
 st.markdown(
     """
     <style>
-    .stApp {
-        background-color: #bcecac; /* Light Green background */
-        color: #212121;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .top-nav-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #FFFFFF;
-        padding: 15px 20px;
-        border-bottom: 3px solid #CCCCCC;
-        z-index: 1000;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .nav-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     /* Button style */
     .test-button {
         background: linear-gradient(45deg, #1E90FF, #00BFFF);
@@ -63,65 +41,46 @@ st.markdown(
         margin-top: 20px;
     }
 
-    /* Footer style */
-    .footer {
-        background-color: #06402b; /* Dark Green */
-        color: #ffffff; /* White text */
-        display: flex;
-        flex-direction: column;  /* Stack items vertically */
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 150px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    .footer a {
-        color: #ffffff; /* White links */
-        text-decoration: none;
-        padding: 0 15px;
-        font-size: 20px;
-    }
-    .footer a:hover {
-        color: #e9ba8c;  /* Peach color for hover effect */
-    }
-    .footer .social-icons {
-        margin-top: 10px;
-    }
-    .footer .social-icons i {
-        font-size: 30px;
-        padding: 10px;
-        transition: color 0.3s ease;
-    }
-    .footer .social-icons i:hover {
-        color: #e9ba8c;  /* Peach */
-    }
+    a:link, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
 
-    /* Styled image */
-    .styled-image {
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        margin-top: 20px;
-        width: 250px;  /* Adjusted width */
-        object-fit: cover; /* Ensures the image fits within the box while maintaining aspect ratio */
-    }
+a:hover, a:active {
+    color: #e9ba8c;
+    background-color: transparent;
+    text-decoration: none;
+}
 
-    .styled-image:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #06402b; /* Dark Green background */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-    /* Animation for fade in */
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+.footer .social-icons {
+    margin-top: 8px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.footer .social-icons a:hover {
+    color: #e9ba8c; /* Peach hover effect */
+}
+@keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 
     /* Center the widget (button) */
@@ -130,11 +89,6 @@ st.markdown(
         justify-content: center;
         align-items: center;
         height: 100px; /* Adjust as needed */
-    }
-
-    /* Custom page margin */
-    body {
-        margin-top: 80px;
     }
     </style>
     """,
@@ -200,7 +154,6 @@ st.markdown(
 st.markdown(
     """
   <div class="footer">
-        <p>Connect with us:</p>
         <div class="social-icons">
             <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>

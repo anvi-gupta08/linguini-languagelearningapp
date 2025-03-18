@@ -60,7 +60,6 @@ st.markdown(
         animation: fadeIn 1.5s;
         text-align: center;
     }
-
     /* Center the footer content */
     .footer {
         background-color: #06402b;

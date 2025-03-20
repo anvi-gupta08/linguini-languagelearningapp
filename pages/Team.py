@@ -88,10 +88,10 @@ st.markdown(
         <div class="developer-image">Image Placeholder</div>
         <h1>About the Developer</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac ex ac justo vehicula tincidunt.
-            Phasellus fermentum nisi nec urna auctor, nec vehicula urna fermentum. In luctus, libero non vehicula
-            dictum, lectus metus posuere sapien, ac fermentum nisl libero a libero. Curabitur in est id orci fermentum
-            fermentum. Donec et libero eu ante luctus ultricies ut in mauris.
+            Hi there! I'm Anvi Gupta, 17 from Mumbai, student and developer with a strong focus on coding, web design, and data analysis.
+            I am super passionate about computer science, coding, linguistics, literature, and i'm so happy you can read this right now.
+            I’m actively involved in research projects and leadership roles, particularly in tech-driven initiatives. My goal is to create meaningful 
+            solutions that positively impact communities and individuals. Thanks for accompanying me on my journey!
         </p>
     </div>
     """,

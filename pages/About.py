@@ -103,14 +103,13 @@ a:hover, a:active {
     unsafe_allow_html=True
 )
 
-# Create content using columns
 with st.container():
 
     col1, col2 = st.columns([2, 3])
 
     with col1:
         st.image(
-            'logo.png',  # Local image file path
+            r'C:\Users\pc\Downloads\Screenshot__430_-removebg-preview.png',  # Local image file path
             width=300
         )
 
@@ -121,6 +120,9 @@ with st.container():
                 <h2 style="color: #000000;">Vowel Positioning in Languages</h2>
                 <p style="color: #000000;">
                     Vowel positioning varies significantly across languages, creating unique pronunciation challenges for language learners. Each language has its own set of vowel sounds, characterized by specific placements of the tongue, lips, and jaw. For example, English has a relatively complex vowel system with around 12 distinct vowels, varying widely in tongue height, backness, and lip rounding. In contrast, languages like Spanish have only five vowel sounds, which are simpler and more consistent in their positioning.
+                </p>
+                <p style="color: #000000;">
+                Vowel sounds are often categorized based on their backness and roundness. Front vowels are produced with the tongue positioned towards the front of the mouth, like in the English sound /i/ in "see." Back vowels, like the /u/ sound in "too," are formed with the tongue towards the back. Central vowels fall in between, with the tongue placed in the middle of the mouth. Additionally, some vowels can be rounded, where the lips are pursed (as in the French /u/), while others are unrounded, where the lips are relaxed.
                 </p>
                 <p style="color: #000000;">
                     These differences in vowel positioning mean that certain vowels in a new language may feel unfamiliar or physically challenging to produce accurately, as they may require new or less-used tongue and lip placements. Understanding these differences helps learners anticipate pronunciation challenges and work toward more accurate pronunciation in their target language.

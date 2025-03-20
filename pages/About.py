@@ -53,31 +53,39 @@ a:hover, a:active {
     text-decoration: none;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #06402b; /* Dark Green background */
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.footer .social-icons {
-    margin-top: 8px;
-}
-
-.footer .social-icons a {
-    color: white;
-    font-size: 20px;
-    padding: 0 10px;
-}
-
-.footer .social-icons a:hover {
-    color: #e9ba8c; /* Peach hover effect */
-}
+/* Center the footer content */
+    .footer {
+        background-color: #06402b;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin-top: auto; /* Pushes footer to bottom */
+    }
+    .footer a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 15px;
+        font-size: 20px;
+    }
+    .footer a:hover {
+        color: #e9ba8c;
+    }
+    .footer .social-icons {
+        margin-top: 10px;
+    }
+    .footer .social-icons i {
+        font-size: 30px;
+        padding: 10px;
+        transition: color 0.3s ease;
+    }
+    .footer .social-icons i:hover {
+        color: #e9ba8c;
+    }
 @keyframes fadeIn {
         0% { opacity: 0; }
         100% { opacity: 1; }

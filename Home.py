@@ -140,19 +140,46 @@ with col2:
         """
         <div class="welcome-section">
             <h2 style="color: #000000;">Welcome to Linguini!</h2>
-            <p style="color: #000000;">
-                A cutting-edge language-learning platform tailored to help you master new languages with ease and efficiency.
-            </p>
-            <p style="color: #000000;">
-                Our advanced system customizes your learning experience based on your unique vocal patterns, making pronunciation easier and faster. With personalized language recommendations based on vowel charts, you’ll feel confident and comfortable as you speak.
-            </p>
-            <p style="color: #000000;">
-                For those with speech challenges, we go further by offering recommendations that minimize difficulty, making language learning more accessible than ever before.
-            </p>
+
+<p style="color: #000000;">
+               Discover a language-learning platform designed to make mastering new languages easier and more effective. Our advanced technology adapts to your unique vocal patterns, providing a personalized experience that helps you improve pronunciation quickly and confidently. Whether you're a beginner or advanced learner, our platform is here to guide you every step of the way.
+
+                
+</p>
+<p style="color: #000000;">
+                1.Cutting-edge language-learning platform designed for efficient language mastery
+
+
+                
+</p>
+<p style="color: #000000;">
+                2. Customizes learning based on your unique vocal patterns for easier and faster pronunciation
+
+
+                
+</p>
+<p style="color: #000000;">
+                3. Personalized language recommendations tailored to individual vowel charts
+
+                
+</p>
+<p style="color: #000000;">
+                4. Boosts confidence and comfort in speaking with targeted practice
+
+
+                
+</p>
+
+<p style="color: #000000;">
+                5. Special recommendations for those with speech challenges, reducing difficulty and improving accessibility
+
+
+</p>
         </div>
         """,
         unsafe_allow_html=True
     )
+
 
 # Closing Main Content Div
 st.markdown('</div>', unsafe_allow_html=True)

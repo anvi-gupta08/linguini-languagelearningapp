@@ -36,7 +36,7 @@ st.markdown(
     
     /* Style for the button widget */
     .test-button {
-        background: #000000; /* Black background for button */
+        background: linear-gradient(45deg, #1E90FF, #00BFFF)
         color: #ffffff; /* White text */
         font-size: 18px;
         font-weight: bold;

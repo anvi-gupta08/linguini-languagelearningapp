@@ -131,6 +131,13 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+col = st.columns([3,9])
+col[0].image('logo.png')
+col[1].text('')
+col[1].text('')
+col[1].text('')
+col[1].text('')
+col[1].markdown("<h1 style='text-align: center; color: white;'>Linguini Learning</h1>", unsafe_allow_html=True)
 
 # Main Content Container
 st.markdown('<div class="main-content">', unsafe_allow_html=True)

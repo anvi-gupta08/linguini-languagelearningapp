@@ -85,7 +85,7 @@ a:hover, a:active {
 
 
 
-    st.markdown(
+st.markdown(
         """
         <div class="developer-section">
             <h1>About the Developer</h1>

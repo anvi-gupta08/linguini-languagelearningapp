@@ -109,7 +109,7 @@ with st.container():
 
     with col1:
         # Replace with the new image path
-        st.image(r'C:\Users\pc\Downloads\Screenshot__449_-removebg-preview.png', width=300)
+        st.image('Screenshot__449_-removebg-preview.png', width=300)
 
     with col2:
         st.markdown(

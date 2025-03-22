@@ -86,7 +86,8 @@ a:hover, a:active {
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.image('Screenshot__457_-removebg-preview.png', use_container_width=True)
+    # Reduced size of the image
+    st.image('Screenshot__457_-removebg-preview.png', width=200)
 
 with col2:
     st.markdown(

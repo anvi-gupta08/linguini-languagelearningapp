@@ -241,7 +241,7 @@ with st.container():
         # Text content on the right
         st.markdown(
             """
-            <div class="welcome-section">
+            <div class="welcome-section" style="margin-top: 20px;">
                 <h2 style="color: #000000;">Vowel Positioning in Languages</h2>
                 <p style="color: #000000;">
                     Vowel positioning varies significantly across languages, creating unique pronunciation challenges for language learners. Each language has its own set of vowel sounds, characterized by specific placements of the tongue, lips, and jaw. For example, English has a relatively complex vowel system with around 12 distinct vowels, varying widely in tongue height, backness, and lip rounding. In contrast, languages like Spanish have only five vowel sounds, which are simpler and more consistent in their positioning.

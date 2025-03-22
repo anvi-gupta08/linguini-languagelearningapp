@@ -162,7 +162,7 @@ st.markdown(f'''<div class="header-row">
 st.markdown('<div class="main-content">', unsafe_allow_html=True)
 
 # Adjusted column widths to make the text box wider
-col2 , col3 = st.columns([3.5, 1])  # Middle column (col2) is now 4, making it wider
+col2 , col3 = st.columns([3.5, 1],vertical_alignment="center")  # Middle column (col2) is now 4, making it wider
 
 with col2:
     st.markdown(

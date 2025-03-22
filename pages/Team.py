@@ -83,7 +83,7 @@ a:hover, a:active {
 )
 
 # Two Column Layout for Image and Text
-col1, col2 = st.columns([1, 2])
+col1, col2 = st.columns([0.5, 2])
 
 with col1:
     # Reduced size of the image

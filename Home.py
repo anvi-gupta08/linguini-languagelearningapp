@@ -60,7 +60,53 @@ st.markdown(
         animation: fadeIn 1.5s;
         text-align: center;
     }
-    /* Center the footer content */
+    
+    /* Styled image */
+    .styled-image {
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 20px;
+        width: 250px;
+        object-fit: cover;
+    }
+    
+    .styled-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Image for the logo and images around text */
+    .logo-image {
+        width: 40px;  /* Smaller logo size */
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    
+    .text-box-with-images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .text-box-with-images .left-image, .text-box-with-images .right-image {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 150px;
+    }
+    
+    .text-box-with-images .left-image {
+        left: -160px;  /* Position to the left of the text box */
+    }
+
+    .text-box-with-images .right-image {
+        right: -160px;  /* Position to the right of the text box */
+    }
+
+    /* Footer styles */
     .footer {
         background-color: #06402b;
         color: #ffffff;
@@ -94,21 +140,6 @@ st.markdown(
         color: #e9ba8c;
     }
 
-    /* Styled image */
-    .styled-image {
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        margin-top: 20px;
-        width: 250px;
-        object-fit: cover;
-    }
-    
-    .styled-image:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-
     @keyframes fadeIn {
         0% { opacity: 0; }
         100% { opacity: 1; }
@@ -121,7 +152,6 @@ st.markdown(
         align-items: center;
         height: 100px;
     }
-
     </style>
     """,
     unsafe_allow_html=True
@@ -133,53 +163,46 @@ st.markdown('<div class="main-content">', unsafe_allow_html=True)
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.image('logo.png', width=250)
-
-with col2:
+    # Image next to the title (small version of the logo)
     st.markdown(
         """
-        <div class="welcome-section">
-            <h2 style="color: #000000;">Welcome to Linguini!</h2>
-
-<p style="color: #000000;">
-               Discover a language-learning platform designed to make mastering new languages easier and more effective. Our advanced technology adapts to your unique vocal patterns, providing a personalized experience that helps you improve pronunciation quickly and confidently. Whether you're a beginner or advanced learner, our platform is here to guide you every step of the way.
-
-                
-</p>
-<p style="color: #000000;">
-                1.Cutting-edge language-learning platform designed for efficient language mastery
-
-
-                
-</p>
-<p style="color: #000000;">
-                2. Customizes learning based on your unique vocal patterns for easier and faster pronunciation
-
-
-                
-</p>
-<p style="color: #000000;">
-                3. Personalized language recommendations tailored to individual vowel charts
-
-                
-</p>
-<p style="color: #000000;">
-                4. Boosts confidence and comfort in speaking with targeted practice
-
-
-                
-</p>
-
-<p style="color: #000000;">
-                5. Special recommendations for those with speech challenges, reducing difficulty and improving accessibility
-
-
-</p>
+        <div class="text-box-with-images">
+            <img src="logo.png" class="logo-image" />
+            <h2 style="color: #000000; display: inline;">Welcome to Linguini!</h2>
+            <img src="Screenshot__456_-removebg-preview.png" class="left-image" />
+            <img src="Screenshot__459_-removebg-preview.png" class="right-image" />
         </div>
         """,
         unsafe_allow_html=True
     )
 
+with col2:
+    # Text content with images around it
+    st.markdown(
+        """
+        <div class="welcome-section">
+            <p style="color: #000000;">
+                Discover a language-learning platform designed to make mastering new languages easier and more effective. Our advanced technology adapts to your unique vocal patterns, providing a personalized experience that helps you improve pronunciation quickly and confidently. Whether you're a beginner or advanced learner, our platform is here to guide you every step of the way.
+            </p>
+            <p style="color: #000000;">
+                1. Cutting-edge language-learning platform designed for efficient language mastery
+            </p>
+            <p style="color: #000000;">
+                2. Customizes learning based on your unique vocal patterns for easier and faster pronunciation
+            </p>
+            <p style="color: #000000;">
+                3. Personalized language recommendations tailored to individual vowel charts
+            </p>
+            <p style="color: #000000;">
+                4. Boosts confidence and comfort in speaking with targeted practice
+            </p>
+            <p style="color: #000000;">
+                5. Special recommendations for those with speech challenges, reducing difficulty and improving accessibility
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Closing Main Content Div
 st.markdown('</div>', unsafe_allow_html=True)

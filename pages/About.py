@@ -29,7 +29,7 @@ st.markdown(
         border-radius: 20px;
         padding: 25px;
         animation: fadeIn 1.5s;
-        text-align: center; /* Center the text */
+        text-align: left; /* Left-align the text */
     }
 
     /* Content section with white background */
@@ -104,14 +104,14 @@ a:hover, a:active {
 )
 
 with st.container():
-
-    col1, col2 = st.columns([2, 3])
+    col1, col2 = st.columns([1, 2])
 
     with col1:
-        # Replace with the new image path
+        # Image on the left
         st.image('Screenshot__449_-removebg-preview.png', width=300)
 
     with col2:
+        # Text content on the right
         st.markdown(
             """
             <div class="welcome-section">

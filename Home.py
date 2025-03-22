@@ -132,7 +132,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-file_ = open("/home/rzwitch/Desktop/giphy.gif", "rb")
+file_ = open("logo.png", "rb")
 contents = file_.read()
 data_url = base64.b64encode(contents).decode("utf-8")
 file_.close()

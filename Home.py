@@ -128,25 +128,24 @@ st.markdown(
         height: 100px;
     }
     .header-row {
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Center content horizontally */
-      background-color: #06402b;
-      padding: 10px 20px;
-      border-radius: 12px; /* Rounded corners */
-      position: relative;
-    }
-    
-    .header-row img {
-      position: absolute;
-      left: 20px;
-      height: 50px; /* Optional: control image size */
-    }
-    
-    .header-row h1 {
-      color: white;
-      margin: 0 auto;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center image + text as a group */
+  background-color: #06402b;
+  padding: 15px 25px;
+  border-radius: 12px;
+  gap: 15px; /* Space between image and text */
+}
+
+.header-row h1 {
+  color: white;
+  margin: 0;
+}
+
+.header-row img {
+  height: 50px; /* Optional: adjust size */
+}
+
 
     </style>
     """,

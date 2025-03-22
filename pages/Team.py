@@ -82,32 +82,27 @@ a:hover, a:active {
     unsafe_allow_html=True
 )
 
-# Developer Section Layout
-st.markdown(
-    """
-    <div class="developer-section">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div class="developer-image" style="margin-right: 20px;">Image Placeholder</div>
-            <div>
-                <h1>About the Developer</h1>
-                <p>
-                    Hi there! I'm Anvi Gupta, 17 from Mumbai, student and developer with a strong focus on coding, web design, and data analysis.
-                    I am super passionate about computer science, coding, linguistics, literature, and I'm so happy you can read this right now.
-                    I’m actively involved in research projects and leadership roles, particularly in tech-driven initiatives. My goal is to create meaningful 
-                    solutions that positively impact communities and individuals. Thanks for accompanying me on my journey!
-                </p>
-            </div>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# Using st.image to show only Screenshot__457_-removebg-preview.png
-col1, col2, col3 = st.columns([1, 2, 1])
+# Two Column Layout for Image and Text
+col1, col2 = st.columns([1, 2])
 
 with col1:
     st.image('Screenshot__457_-removebg-preview.png', use_container_width=True)
+
+with col2:
+    st.markdown(
+        """
+        <div class="developer-section">
+            <h1>About the Developer</h1>
+            <p>
+                Hi there! I'm Anvi Gupta, 17 from Mumbai, student and developer with a strong focus on coding, web design, and data analysis.
+                I am super passionate about computer science, coding, linguistics, literature, and I'm so happy you can read this right now.
+                I’m actively involved in research projects and leadership roles, particularly in tech-driven initiatives. My goal is to create meaningful 
+                solutions that positively impact communities and individuals. Thanks for accompanying me on my journey!
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Footer
 st.markdown(
@@ -122,7 +117,8 @@ st.markdown(
         <p>&copy; 2025 LanguageMaster, All Rights Reserved</p>
     </div>
     """,
-    unsafe_allow_html=True)
+    unsafe_allow_html=True
+)
 
 st.markdown(
     """

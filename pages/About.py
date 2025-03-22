@@ -109,7 +109,6 @@ with st.container():
     with col1:
         # Image on the left
         st.image('Screenshot__449_-removebg-preview.png', width=300)
-        st.image('Screenshot__463_-removebg-preview.png', width=300)
 
     with col2:
         # Text content on the right
@@ -120,6 +119,22 @@ with st.container():
                 <p style="color: #000000;">
                     Vowel positioning varies significantly across languages, creating unique pronunciation challenges for language learners. Each language has its own set of vowel sounds, characterized by specific placements of the tongue, lips, and jaw. For example, English has a relatively complex vowel system with around 12 distinct vowels, varying widely in tongue height, backness, and lip rounding. In contrast, languages like Spanish have only five vowel sounds, which are simpler and more consistent in their positioning.
                 </p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    col3, col4 = st.columns([2, 1])
+
+    with col4:
+        # Image on the left
+        st.image('Screenshot__463_-removebg-preview.png', width=300)
+
+    with col3:
+        # Text content on the right
+        st.markdown(
+            """
+            <div class="welcome-section">
                 <p style="color: #000000;">
                 Vowel sounds are often categorized based on their backness and roundness. Front vowels are produced with the tongue positioned towards the front of the mouth, like in the English sound /i/ in "see." Back vowels, like the /u/ sound in "too," are formed with the tongue towards the back. Central vowels fall in between, with the tongue placed in the middle of the mouth. Additionally, some vowels can be rounded, where the lips are pursed (as in the French /u/), while others are unrounded, where the lips are relaxed.
                 </p>

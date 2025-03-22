@@ -82,29 +82,6 @@ st.markdown(
         margin-right: 10px;
         vertical-align: middle;
     }
-    
-    .text-box-with-images {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        width: 100%;
-    }
-
-    .text-box-with-images .left-image, .text-box-with-images .right-image {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 150px;
-    }
-    
-    .text-box-with-images .left-image {
-        left: -160px;  /* Position to the left of the text box */
-    }
-
-    .text-box-with-images .right-image {
-        right: -160px;  /* Position to the right of the text box */
-    }
 
     /* Footer styles */
     .footer {
@@ -160,23 +137,17 @@ st.markdown(
 # Main Content Container
 st.markdown('<div class="main-content">', unsafe_allow_html=True)
 
-col1, col2 = st.columns([1, 2])
+# Create three columns
+col1, col2, col3 = st.columns([1, 2, 1])
 
 with col1:
-    # Smaller version of the logo
-    st.image('logo.png', width=40, use_container_width=False)
-
-    # Text with images around it
-    st.markdown(
-        """
-        <div class="text-box-with-images">
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    # First column: Display the image Screenshot__456_-removebg-preview.png
+    st.image('Screenshot__456_-removebg-preview.png', width=250, use_container_width=True)
 
 with col2:
-    # Text content with images around it
+    # Second column: Textbox and Logo
+    st.image('logo.png', width=40, use_container_width=False)  # Logo image in smaller size
+    
     st.markdown(
         """
         <div class="welcome-section">
@@ -203,9 +174,9 @@ with col2:
         unsafe_allow_html=True
     )
 
-    # Displaying images on left and right side of the content box
-    col2.image('Screenshot__456_-removebg-preview.png', width=150, use_container_width=True)
-    col2.image('Screenshot__459_-removebg-preview.png', width=150, use_container_width=True)
+with col3:
+    # Third column: Display the image Screenshot__459_-removebg-preview.png
+    st.image('Screenshot__459_-removebg-preview.png', width=250, use_container_width=True)
 
 # Closing Main Content Div
 st.markdown('</div>', unsafe_allow_html=True)

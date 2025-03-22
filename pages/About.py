@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 
 st.set_page_config(page_title="Language Learning Platform", layout="wide")
 
@@ -109,10 +108,8 @@ with st.container():
     col1, col2 = st.columns([2, 3])
 
     with col1:
-        # Load the local image using the path
-        img_path = r'C:\Users\pc\Downloads\Screenshot__449_-removebg-preview.png'  # Update path as needed
-        img = Image.open(img_path)
-        st.image(img, width=300)
+        # Replace with the new image path
+        st.image(r'C:\Users\pc\Downloads\Screenshot__449_-removebg-preview.png', width=300)
 
     with col2:
         st.markdown(

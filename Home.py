@@ -163,14 +163,13 @@ st.markdown('<div class="main-content">', unsafe_allow_html=True)
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    # Image next to the title (small version of the logo)
+    # Smaller version of the logo
+    st.image('logo.png', width=40, use_column_width=False)
+
+    # Text with images around it
     st.markdown(
         """
         <div class="text-box-with-images">
-            <img src="logo.png" class="logo-image" />
-            <h2 style="color: #000000; display: inline;">Welcome to Linguini!</h2>
-            <img src="Screenshot__456_-removebg-preview.png" class="left-image" />
-            <img src="Screenshot__459_-removebg-preview.png" class="right-image" />
         </div>
         """,
         unsafe_allow_html=True
@@ -203,6 +202,10 @@ with col2:
         """,
         unsafe_allow_html=True
     )
+
+    # Displaying images on left and right side of the content box
+    col2.image('Screenshot__456_-removebg-preview.png', width=150, use_column_width=False)
+    col2.image('Screenshot__459_-removebg-preview.png', width=150, use_column_width=False)
 
 # Closing Main Content Div
 st.markdown('</div>', unsafe_allow_html=True)

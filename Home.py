@@ -1,4 +1,5 @@
 import streamlit as st
+import base64
 
 st.set_page_config(page_title="Language Learning Platform", layout="wide")
 
@@ -131,13 +132,17 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+file_ = open("/home/rzwitch/Desktop/giphy.gif", "rb")
+contents = file_.read()
+data_url = base64.b64encode(contents).decode("utf-8")
+file_.close()
 col = st.columns([3,9])
 col[0].image('logo.png')
 col[1].text('')
 col[1].text('')
 col[1].text('')
 col[1].text('')
-col[1].markdown("<h1 style='text-align: center; color: white;'>Linguini Learning</h1>", unsafe_allow_html=True)
+col[1].markdown(f"<img src='data:image/gif;base64,{data_url}' alt='cat gif'><h1 style='text-align: center; color: white;'>Linguini Learning</h1>", unsafe_allow_html=True)
 
 # Main Content Container
 st.markdown('<div class="main-content">', unsafe_allow_html=True)

@@ -135,7 +135,8 @@ st.markdown(
 # Main Content Container
 st.markdown('<div class="main-content">', unsafe_allow_html=True)
 
-col1, col2 , col3 = st.columns([1, 2 , 3])
+# Adjusted column widths to make the text box wider
+col1, col2 , col3 = st.columns([1, 2, 1])  # Middle column (col2) is now 4, making it wider
 
 with col1:
     st.image('logo.png', width=250)
@@ -186,6 +187,7 @@ with col2:
     )
 with col3:
     st.image('Screenshot__456_-removebg-preview.png', width=250)
+
 # Closing Main Content Div
 st.markdown('</div>', unsafe_allow_html=True)
 

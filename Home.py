@@ -185,7 +185,7 @@ with col2:
         unsafe_allow_html=True
     )
 with col3:
-    st.image('Screenshot__456_-removebg-preview.png.png', width=250)
+    st.image('Screenshot__456_-removebg-preview.png', width=250)
 # Closing Main Content Div
 st.markdown('</div>', unsafe_allow_html=True)
 

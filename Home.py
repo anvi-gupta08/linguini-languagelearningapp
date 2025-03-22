@@ -142,9 +142,7 @@ st.markdown(
   margin: 0;
 }
 
-.header-row img {
-  height: 50px; /* Optional: adjust size */
-}
+
 
 
     </style>

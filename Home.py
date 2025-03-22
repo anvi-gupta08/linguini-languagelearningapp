@@ -127,7 +127,17 @@ st.markdown(
         align-items: center;
         height: 100px;
     }
-
+    .header-row {
+      display: flex;
+      align-items: center; /* Vertically center the items */
+      background-color: #06402b; /* Background color for the row */
+      padding: 10px; /* Optional: adds some spacing */
+    }
+    
+    .header-row h1 {
+      color: white; /* Keeps the white color from your original inline style */
+      margin-left: 15px; /* Space between the image and the heading */
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -136,13 +146,10 @@ file_ = open("logo.png", "rb")
 contents = file_.read()
 data_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
-col = st.columns([3,9])
-col[0].image('logo.png')
-col[1].text('')
-col[1].text('')
-col[1].text('')
-col[1].text('')
-col[1].markdown(f"<img src='data:image/gif;base64,{data_url}' alt='cat gif'><h1 style='text-align: center; color: white;'>Linguini Learning</h1>", unsafe_allow_html=True)
+st.markdown(f'''<div class="header-row">
+  <img src="data:image/gif;base64,{data_url}" alt="cat gif">
+  <h1>Linguini Learning</h1>
+</div>''', unsafe_allow_html=True)
 
 # Main Content Container
 st.markdown('<div class="main-content">', unsafe_allow_html=True)

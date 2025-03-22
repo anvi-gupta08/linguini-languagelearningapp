@@ -94,6 +94,10 @@ st.markdown(
     .footer .social-icons i:hover {
         color: #e9ba8c;
     }
+@keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 
     /* Styled image */
     .styled-image {
@@ -205,3 +209,4 @@ st.markdown(
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     """,
     unsafe_allow_html=True
+)

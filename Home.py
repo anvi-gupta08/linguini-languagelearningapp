@@ -164,7 +164,7 @@ col1, col2 = st.columns([1, 2])
 
 with col1:
     # Smaller version of the logo
-    st.image('logo.png', width=40, use_column_width=False)
+    st.image('logo.png', width=40, use_container_width=False)
 
     # Text with images around it
     st.markdown(
@@ -204,8 +204,8 @@ with col2:
     )
 
     # Displaying images on left and right side of the content box
-    col2.image('Screenshot__456_-removebg-preview.png', width=150, use_column_width=False)
-    col2.image('Screenshot__459_-removebg-preview.png', width=150, use_column_width=False)
+    col2.image('Screenshot__456_-removebg-preview.png', width=150, use_container_width=True)
+    col2.image('Screenshot__459_-removebg-preview.png', width=150, use_container_width=True)
 
 # Closing Main Content Div
 st.markdown('</div>', unsafe_allow_html=True)

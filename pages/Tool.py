@@ -278,7 +278,7 @@ speech_defects = {
     }
 }
 
-st.title("Language and Speech Defect Recommendation")
+st.title("Language Recommender")
 
 native_language = st.selectbox("Select your Native Language", list(vowel_systems.keys()))
 

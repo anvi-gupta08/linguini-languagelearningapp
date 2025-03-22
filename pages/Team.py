@@ -85,14 +85,22 @@ a:hover, a:active {
 st.markdown(
     """
     <div class="developer-section">
-        <div class="developer-image">Image Placeholder</div>
-        <h1>About the Developer</h1>
-        <p>
-            Hi there! I'm Anvi Gupta, 17 from Mumbai, student and developer with a strong focus on coding, web design, and data analysis.
-            I am super passionate about computer science, coding, linguistics, literature, and i'm so happy you can read this right now.
-            I’m actively involved in research projects and leadership roles, particularly in tech-driven initiatives. My goal is to create meaningful 
-            solutions that positively impact communities and individuals. Thanks for accompanying me on my journey!
-        </p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="developer-image" style="margin-right: 20px;">Image Placeholder</div>
+            <div>
+                <h1>About the Developer</h1>
+                <p>
+                    Hi there! I'm Anvi Gupta, 17 from Mumbai, student and developer with a strong focus on coding, web design, and data analysis.
+                    I am super passionate about computer science, coding, linguistics, literature, and I'm so happy you can read this right now.
+                    I’m actively involved in research projects and leadership roles, particularly in tech-driven initiatives. My goal is to create meaningful 
+                    solutions that positively impact communities and individuals. Thanks for accompanying me on my journey!
+                </p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <!-- Add the Screenshot image next to the text -->
+            <img src="Screenshot__457_-removebg-preview.png" width="200" />
+        </div>
     </div>
     """,
     unsafe_allow_html=True

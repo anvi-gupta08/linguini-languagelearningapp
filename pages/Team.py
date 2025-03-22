@@ -82,14 +82,9 @@ a:hover, a:active {
     unsafe_allow_html=True
 )
 
-# Two Column Layout for Image and Text
-col1, col2 = st.columns([0.5, 2])
 
-with col1:
-    # Reduced size of the image
-    st.image('Screenshot__457_-removebg-preview.png', width=180)
 
-with col2:
+
     st.markdown(
         """
         <div class="developer-section">

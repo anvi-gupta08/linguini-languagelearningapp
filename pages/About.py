@@ -109,6 +109,7 @@ with st.container():
     with col1:
         # Image on the left
         st.image('Screenshot__449_-removebg-preview.png', width=300)
+        st.image('img.png', width=300)
 
     with col2:
         # Text content on the right

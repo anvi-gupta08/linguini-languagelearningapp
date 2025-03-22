@@ -134,7 +134,7 @@ with st.container():
         # Text content on the right
         st.markdown(
             """
-            <div class="welcome-section">
+            <div class="welcome-section" style="margin-top: 20px;">
                 <p style="color: #000000;">
                 Vowel sounds are often categorized based on their backness and roundness. Front vowels are produced with the tongue positioned towards the front of the mouth, like in the English sound /i/ in "see." Back vowels, like the /u/ sound in "too," are formed with the tongue towards the back. Central vowels fall in between, with the tongue placed in the middle of the mouth. Additionally, some vowels can be rounded, where the lips are pursed (as in the French /u/), while others are unrounded, where the lips are relaxed.
                 </p>

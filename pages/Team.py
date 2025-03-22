@@ -82,6 +82,7 @@ a:hover, a:active {
     unsafe_allow_html=True
 )
 
+# Developer Section Layout
 st.markdown(
     """
     <div class="developer-section">
@@ -97,15 +98,24 @@ st.markdown(
                 </p>
             </div>
         </div>
-        <div style="text-align: center; margin-top: 20px;">
-            <!-- Add the Screenshot image next to the text -->
-            <img src="Screenshot__457_-removebg-preview.png" width="200" />
-        </div>
     </div>
     """,
     unsafe_allow_html=True
 )
 
+# Using st.image to show the Screenshot image
+col1, col2, col3 = st.columns([1, 2, 1])
+
+with col1:
+    st.image('Screenshot__456_-removebg-preview.png', use_column_width=True)
+
+with col2:
+    st.image('Screenshot__457_-removebg-preview.png', use_column_width=True)
+
+with col3:
+    st.image('Screenshot__459_-removebg-preview.png', use_column_width=True)
+
+# Footer
 st.markdown(
     """
     <div class="footer">

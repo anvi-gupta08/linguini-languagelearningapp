@@ -104,7 +104,7 @@ a:hover, a:active {
 )
 
 with st.container():
-    col1, col2 = st.columns([1, 2])
+    col1, col2 = st.columns([1, 2],vertical_alignment="center")
 
     with col1:
         # Image on the left
@@ -124,7 +124,7 @@ with st.container():
             unsafe_allow_html=True
         )
 
-    col3, col4 = st.columns([2, 1])
+    col3, col4 = st.columns([2, 1],vertical_alignment="center")
 
     with col4:
         # Image on the left

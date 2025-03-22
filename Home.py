@@ -148,7 +148,7 @@ with st.container():
 
     with col1:
         st.image(
-            r'C:\Users\pc\Downloads\Screenshot__430_-removebg-preview.png',  # Local image file path
+            r'logo.png',  # Local image file path
             width=300
         )
 

@@ -87,7 +87,7 @@ col1, col2 = st.columns([0.5, 2])
 
 with col1:
     # Reduced size of the image
-    st.image('Screenshot__457_-removebg-preview.png', width=200)
+    st.image('Screenshot__457_-removebg-preview.png', width=200, height=200)
 
 with col2:
     st.markdown(

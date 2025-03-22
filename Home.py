@@ -129,15 +129,25 @@ st.markdown(
     }
     .header-row {
       display: flex;
-      align-items: center; /* Vertically center the items */
-      background-color: #06402b; /* Background color for the row */
-      padding: 10px; /* Optional: adds some spacing */
+      align-items: center;
+      justify-content: center; /* Center content horizontally */
+      background-color: #06402b;
+      padding: 10px 20px;
+      border-radius: 12px; /* Rounded corners */
+      position: relative;
+    }
+    
+    .header-row img {
+      position: absolute;
+      left: 20px;
+      height: 50px; /* Optional: control image size */
     }
     
     .header-row h1 {
-      color: white; /* Keeps the white color from your original inline style */
-      margin-left: 15px; /* Space between the image and the heading */
+      color: white;
+      margin: 0 auto;
     }
+
     </style>
     """,
     unsafe_allow_html=True
